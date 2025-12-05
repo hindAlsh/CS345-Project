@@ -1,18 +1,17 @@
-# CS345-Project
+# CS345 Project 
 
 
-## Team Members
+## 👥 Team Members
 - **Hind Alshahrani**
 - **Chase Bishop**
 
 ---
 
-## Dataset
+## 📊 Dataset
 **Student Performance Predictions**  
 https://www.kaggle.com/datasets/haseebindata/student-performance-predictions
 
-This dataset includes information about student performance in a course.  
-Features include:
+The dataset contains student performance information, including:
 - Attendance  
 - Study hours  
 - Previous grades  
@@ -21,64 +20,76 @@ Features include:
 
 ---
 
-## Goal
-Our goal is to predict the final grade of students in the course. Since the final grade is a continuous variable, this is a **regression problem**.
+## 🎯 Goal
+The goal of this project is to **predict students’ final course grades** using machine learning regression models.
 
-We aim to:
+Since the final grade is a continuous variable, this is a **regression problem**.
+
+In this project, we aim to:
+- Build multiple regression models  
 - Minimize prediction error  
 - Tune hyperparameters  
 - Detect overfitting and underfitting  
 - Identify the most important features  
-- Compare performance to a simple baseline model  
+- Compare performance against a baseline model  
 
 ---
 
-## Methods
-We began with data preprocessing, including:
-- Imputing missing values  
-- Normalizing numerical features  
-- Encoding categorical variables  
+## 🔧 Methods
 
-We split the dataset into training and testing sets for fair evaluation.
+### **Data Preprocessing**
+- Imputed missing values  
+- Normalized numerical features  
+- Encoded categorical variables  
+- Performed an 80/20 train-test split  
 
-We then trained several regression models:
+### **Models Used**
+We trained the following models:
 - Linear Regression  
 - Ridge Regression  
 - Lasso Regression  
 - Decision Tree Regressor  
 - Random Forest Regressor  
 
-Hyperparameters were tuned using **Grid Search** or **Random Search** with **cross-validation**.
+### **Hyperparameter Tuning**
+- Grid Search  
+- Random Search  
+- Cross-validation  
 
-Feature analysis included:
+### **Feature Analysis**
 - Correlation analysis  
 - Recursive Feature Elimination (RFE)
 
 ---
 
-## Evaluation
-To measure model performance, we used:
+## 📈 Evaluation
+We evaluated the models using:
 - **Mean Squared Error (MSE)**  
 - **Root Mean Squared Error (RMSE)**  
 - **Mean Absolute Error (MAE)**  
 - **R² Score**  
 
-We compared metrics across all models to determine which offered the best balance of accuracy and interpretability. Residuals and learning curves were inspected to identify overfitting or underfitting.
+We also inspected:
+- Residual plots  
+- Learning curves  
+
+This helped determine which models performed best and whether they were overfitting or underfitting.
 
 ---
 
-## Team Member Responsibilities
+## 👥 Team Member Responsibilities
 
 ### **Hind**
 - Collected and cleaned the dataset  
-- Performed EDA with visualizations and statistics  
+- Performed Exploratory Data Analysis (EDA)  
 - Built and trained regression models  
 - Tuned hyperparameters  
 - Checked for overfitting and underfitting  
 
 ### **Chase**
-- Evaluated model metrics across all models  
-- Interpreted performance metrics to determine the best models  
-- Created visualizations of metrics vs. hyperparameters  
+- Evaluated performance metrics  
+- Interpreted model results and identified best models  
+- Created metric visualizations (e.g., error vs. hyperparameters)  
 
 ---
+
